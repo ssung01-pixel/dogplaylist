@@ -8,7 +8,7 @@ const PictureDogs = () => {
       method: "GET",
       headers: {
         "X-RapidAPI-Host": "dog-breeds2.p.rapidapi.com",
-        "X-RapidAPI-Key": "mysecretkey",
+        "X-RapidAPI-Key": "b95fb8e639mshdfe8bbf8d261200p16e0c4jsneeedbbe7f6c8",
       },
     };
 
@@ -22,6 +22,7 @@ const PictureDogs = () => {
       // response is a parameter
       // it takes the response like a 400, 200 so on converts it into json
       .then((data) => {
+        console.log(data);
         const temp = data.slice(0, 10);
         setDogs(temp);
         //setting the dogs
